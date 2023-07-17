@@ -1,0 +1,32 @@
+create database face_recognition;
+use face_recognition;
+
+create table register(
+fname varchar(45) NOT NULL,
+lname varchar(45) NOT NULL,
+contact varchar(10) NOT NULL,
+email varchar(45) PRIMARY KEY NOT NULL,
+securityQ varchar(45) NOT NULL,
+securityA varchar(45) NOT NULL,
+password varchar(45) NOT NULL
+);
+
+create table student(
+dep varchar(45) NOT NULL,
+course varchar(45) NOT NULL,
+year varchar(45) NOT NULL,
+semester varchar(45) NOT NULL,
+student_id INT NOT NULL PRIMARY KEY,
+name varchar(45) NOT NULL,
+division varchar(45) NOT NULL,
+roll varchar(45) NOT NULL UNIQUE KEY,
+gender varchar(45) NOT NULL,
+dob varchar(45) NOT NULL,
+email varchar(45) NOT NULL,
+phone varchar(10) NOT NULL,
+address varchar(45) NOT NULL,
+teacher varchar(45) NOT NULL,
+photosample varchar(4) NOT NULL
+);
+
+
